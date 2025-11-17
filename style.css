@@ -1,0 +1,125 @@
+/* -------------------------------------
+   GLOBAL RESET + FONTS
+--------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1560&q=80') 
+                no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* -------------------------------------
+   HEADER
+--------------------------------------*/
+header {
+    padding: 25px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.45);
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* -------------------------------------
+   MAIN CONTAINER (Glassmorphism)
+--------------------------------------*/
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+.left, .right {
+    flex: 1;
+}
+
+/* -------------------------------------
+   LEFT SECTION
+--------------------------------------*/
+.left h2 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.left p {
+    margin-bottom: 12px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.subtext {
+    opacity: 0.8;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* ICON LINKS */
+.icons {
+    margin-top: 30px;
+}
+
+.icons a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
+}
+
+.icons a:hover {
+    background: rgba(255,255,255,0.35);
+    transform: translateY(-3px);
+}
+
+/* -------------------------------------
+   RIGHT IMAGE
+--------------------------------------*/
+.right img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: 0.4s ease;
+}
+
+.right img:hover {
+    transform: scale(1.03);
+}
+
+/* -------------------------------------
+   RESPONSIVE DESIGN
+--------------------------------------*/
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icons a {
+        margin-bottom: 10px;
+    }
+}
+
